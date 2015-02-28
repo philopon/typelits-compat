@@ -1,5 +1,5 @@
 name:                types-compat
-version:             0.1.0
+version:             0.1.1
 synopsis:            ghc-7.6/7.8 compatible GHC.TypeLits, Data.Typeable and Data.Proxy.
 license:             MIT
 license-file:        LICENSE

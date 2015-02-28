@@ -1,3 +1,5 @@
+{-# OPTIONS_HADDOCK ignore-exports #-}
+
 {-# LANGUAGE ExistentialQuantification #-}
 {-# LANGUAGE UndecidableInstances #-}
 {-# LANGUAGE ScopedTypeVariables #-}
@@ -9,6 +11,40 @@
 {-# LANGUAGE PolyKinds #-}
 {-# LANGUAGE DataKinds #-}
 {-# LANGUAGE CPP #-}
+
+-- | this module exports:
+--
+-- Kinds:
+--
+-- @
+-- Nat
+-- Symbol
+-- @
+--
+-- Classes:
+--
+-- @
+-- KnownNat n
+-- KnownSymbol n
+-- @
+--
+-- Values:
+--
+-- @
+-- natVal :: forall n proxy. KnownNat n => proxy n -> Integer
+-- symbolVal :: forall n proxy. KnownSymbol n => proxy n -> String
+-- @
+--
+-- types
+--
+-- @
+-- type (<=) x y = (x <=? y) ~ True
+--
+-- type family m <=? n :: Bool
+-- type family m + n :: Nat
+-- type family m * n :: Nat
+-- type family m * n :: Nat
+-- @
 
 module GHC.TypeLits.Compat
     ( -- * Kinds

@@ -16,7 +16,7 @@ library
   exposed-modules:     GHC.TypeLits.Compat
                        Data.Typeable.Compat
                        Data.Proxy.Compat
-  build-depends:       base >=4.6 && <4.8
+  build-depends:       base >=4.6 && <4.9
   if impl(ghc < 7.8)
     build-depends:     tagged >= 0.7 && <0.8
   hs-source-dirs:      src
